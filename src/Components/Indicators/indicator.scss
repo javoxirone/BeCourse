@@ -1,0 +1,42 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.indicator{
+    padding: 40px;
+    border-radius: 10px;
+    @include flex(flex, flex-start, flex-start, $cg: 30px);
+    box-shadow: $mainShadow;
+    background-color: #fff;
+    width: 395px;
+    transition: .3s;
+    &__title{
+        color: #000;
+        letter-spacing: 0.01rem;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    &__text{
+        color: $grayColor;
+        letter-spacing: 0.01rem;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__per{
+        font-size: 20px;
+        font-weight: 600;
+        color: $grayColor;
+    }
+    &:hover{
+        box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+    }
+}
+
+// Media styles start
+@media (max-width: 992px) {
+    .indicator{
+        width: 100%;
+    }
+
+}
+// Media styles end

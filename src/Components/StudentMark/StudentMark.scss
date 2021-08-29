@@ -1,0 +1,19 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.students-item{
+  @include flex(flex, space-between, center);
+  .item__start{
+    @include flex(flex, flex-start, center, $cg: 15px);
+    .item__name{
+      font-size: 14px;
+      color: $grayColor;
+      font-weight: 500;
+    }
+  }
+  .item__mark{
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

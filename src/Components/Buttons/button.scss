@@ -1,0 +1,40 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.main-btn{
+    font-size: 14px;
+    padding: 14px 20px;
+    max-width: 250px;
+    background-color: $mainColor;
+    @include flex(flex, center, center, $rg: 14px);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+    &__icon{
+        margin-right: 14px;
+    }
+    &:hover{
+        background-color: #5c40d8;
+    }
+}
+
+.main-btn-2{
+    font-size: 14px;
+    padding: 14px 20px;
+    max-width: 250px;
+    border: 1px solid #DADCE6;
+    @include flex(flex, center, center, $rg: 14px);
+    font-weight: 600;
+    color: $mainColor;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+    &__icon{
+        margin-right: 14px;
+    }
+    &:hover{
+        background-color: #DADCE6;
+    }
+}

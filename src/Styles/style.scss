@@ -1,0 +1,61 @@
+@import '../Fonts/gilroy.scss';
+@import 'mixins.scss';
+@import 'variables.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+body{
+    background-color: $bodyColor;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.app__content{
+    margin-left: 100px;
+}
+.container{
+    max-width: 1760px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.App.active{
+    filter: grayscale(1);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #DADCE4;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b6b6bb;
+}
+@media (max-width: 1900px) {
+    .container{
+        max-width: 890px;
+    }
+}
+@media (max-width: 470px) {
+    .app__content{
+        margin: 0;
+    }
+
+}

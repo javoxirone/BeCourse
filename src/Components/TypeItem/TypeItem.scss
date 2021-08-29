@@ -1,0 +1,32 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.list-item{
+  @include flex(flex, space-between, center);
+  .item__start{
+    @include flex(flex, flex-start, center);
+    .dot{
+      display: inline-block;
+      border-radius: 100%;
+      width: 8px;
+      height: 8px;
+      margin-right: 12px;
+    }
+    .item__title{
+      font-size: 14px;
+      font-weight: 500;
+      color: $grayColor;
+    }
+  }
+  .item__numbers{
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    .percent{
+      color: $grayColor;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

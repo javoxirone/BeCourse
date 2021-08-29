@@ -1,0 +1,63 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+// Main start
+.main__top{
+  @include flex(flex, space-between, center);
+  padding: 45px 0;
+  .main__title{
+
+    h3{
+      font-weight: 600;
+      font-size: 30px;
+      color: #000000;
+    }
+    span{
+      font-weight: 500;
+      font-size: 14px;
+      color: $grayColor;
+    }
+  }
+  .main__btns{
+    @include flex(flex, center, center, $cg: 30px);
+  }
+}
+.content__top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.content__bottom{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-chart{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .content__indicators{
+      @include flex(flex, space-between, center);
+    }
+  }
+  &-list{
+    display: flex;
+  }
+
+}
+// Main end
+
+// Media styles start
+@media (max-width: 992px) {
+  .content__bottom-chart{
+    max-width: 100%;
+    .content__indicators{
+      row-gap: 40px;
+    }
+  }
+
+}
+// Media styles end

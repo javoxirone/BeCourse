@@ -1,0 +1,60 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+@import '../../Fonts/gilroy.scss';
+.recharts-responsive-container{
+    height: 300px!important;
+    max-width: 100%!important;
+}
+line.recharts-cartesian-axis-line, g.recharts-cartesian-grid-vertical, line.recharts-cartesian-axis-tick-line{
+    display: none!important;
+}
+//.recharts-wrapper{
+//    position: static!important;
+//}
+//.recharts-legend-wrapper{
+//    width: auto!important;
+//    top: 30px;
+//    right: 30px;
+//}
+//.recharts-default-legend{
+//    text-align: right!important;
+//}
+//tspan{
+//    font-weight: 500!important;
+//    font-size: 14px!important;
+//    color: $grayColor!important;
+//}
+.students-chart{
+    width: 830px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: $mainShadow;
+    transition: .3s;
+    position: relative;
+    font-family: 'Gilroy'!important;
+    &:hover{
+        box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+    }
+    .chart__title{
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 0.01rem;
+    }
+    hr{
+        border: 1px solid #EEF0F7;
+    }
+}
+.students-chart__bottom{
+    padding: 30px 0;
+    padding-right: 10px;
+}
+.students-chart__top{
+    padding: 30px;
+}
+// Media styles start
+@media (max-width: 992px) {
+    .students-chart{
+        width: 100%;
+    }
+}

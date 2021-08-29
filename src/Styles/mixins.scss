@@ -1,0 +1,9 @@
+@mixin flex ($d, $jc, $ai, $fw: wrap, $fd: row, $cg: 0, $rg: 0) {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+    column-gap: $cg;
+    row-gap: $rg;
+}

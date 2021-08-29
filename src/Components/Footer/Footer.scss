@@ -1,0 +1,14 @@
+footer.footer{
+  padding: 20px 0;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .footer__text{
+      font-weight: 500;
+      font-size: 14px;
+      color: #C7CBD7;
+      text-align: right;
+    }
+  }
+}

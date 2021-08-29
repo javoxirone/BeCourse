@@ -1,0 +1,67 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 100px;
+  z-index: 10;
+  background-color: $sidebarColor;
+  @include flex(flex, space-between, center, $fd: column);
+  &__header{
+    .sidebar__logo{
+      width: 100px;
+      height: 100px;
+      @include flex(flex, center, center);
+      background-color: $mainColor;
+      margin-bottom: 50px;
+    }
+    .sidebar__navbar{
+      .menu{
+        @include flex(flex, center, center, $fd: column, $rg: 30px);
+        &__link{
+          a{
+            color: #969CBA;
+          }
+        }
+
+      }
+
+    }
+
+  }
+  .menu__link.active{
+    a{
+      padding: 15px;
+      color: $mainColor;
+      background-color: #fff;
+      display: flex;
+      border-radius: 10px;
+    }
+  }
+  &__footer{
+    .sidebar__settings{
+      width: 100px;
+      height: 100px;
+      border-top: 1px solid #494E67;
+      @include flex(flex, center, center);
+      color: #969CBA;
+    }
+  }
+
+}
+.custom-select{
+  height: 45px;
+  width: 100px;
+  border: none;
+  background-color: #efefef;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+@media (max-width: 470px) {
+  .sidebar{
+    display: none;
+  }
+}

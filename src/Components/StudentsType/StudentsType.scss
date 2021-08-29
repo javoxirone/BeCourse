@@ -1,0 +1,47 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+
+.students-type{
+  width: 395px;
+  //padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: $mainShadow;
+  transition: .3s;
+  &:hover{
+    box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+  }
+}
+.students-type__top{
+  @include flex(flex, space-between, center);
+  padding: 30px;
+  .students-type__title{
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+.students-type__bottom{
+  padding: 30px;
+  .type-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+hr{
+  border: 1px solid #EEF0F7;
+  background-color: #EEF0F7;
+}
+
+// Media styles start
+@media (max-width: 992px) {
+  .students-card{
+    width: 100%;
+  }
+  .students-type{
+    width: 100%;
+  }
+}
+// Media styles end

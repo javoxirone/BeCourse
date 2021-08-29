@@ -1,0 +1,49 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+
+.students-card{
+  width: 395px;
+  //padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: $mainShadow;
+  transition: .3s;
+  &:hover{
+    box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+  }
+}
+.students-card__top{
+  @include flex(flex, space-between, center);
+  padding: 30px;
+  .students-card__title{
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+.students-card__filter{
+  @include flex(flex, center, center, $cg: 5px);
+  color: $grayColor;
+  .filter__name{
+    font-weight: 500;
+    font-size: 14px;
+    color: $grayColor;
+  }
+}
+.students-card__bottom{
+  padding: 30px;
+  padding-right: 10px;
+  .students-list{
+    max-height: 430px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-right: 20px;
+  }
+}
+hr{
+  border: 1px solid #EEF0F7;
+  background-color: #EEF0F7;
+}
