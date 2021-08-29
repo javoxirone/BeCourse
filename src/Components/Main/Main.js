@@ -19,15 +19,7 @@ import Indicator from '../Indicators/Indicator'
 import ChartsComp from '../Charts/ChartsComp'
 import StudentsCard from '../StudentsCard/Students'
 import StudentsType from "../StudentsType/StudentsType"
-import AOS from 'aos'
-import "aos/dist/aos.css"
 export default function Main (props) {
-    useEffect(() => {
-        AOS.init({
-            once: true
-        });
-    })
-    let [size, setSize] = useState(0)
     let content = {
         English: {
             title: "Dashboard",

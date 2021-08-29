@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import './Sidebar.scss'
 // Icons
-import FolderTwoToneIcon from '@material-ui/icons/FolderTwoTone'
+import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
 import DashboardTwoToneIcon from '@material-ui/icons/DashboardTwoTone'
 import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone'
 import InsertDriveFileTwoToneIcon from '@material-ui/icons/InsertDriveFileTwoTone';
 import SettingsIcon from '@material-ui/icons/Settings'
+import { Link } from 'react-router-dom'
 
 // Components
 import Icon from '../Icon/Icon'
@@ -51,15 +52,17 @@ export default function Sidebar(props) {
                 <GlobalStyles/>
         <div className="sidebar" data-aos="fade-right">
             <div className="sidebar__header">
-                <div className="sidebar__logo">
-                    <img src={props.sidebarLogo} alt="Logo" />
-                </div>
+                <Link to="../../home">
+                    <div className="sidebar__logo">
+                        <img src={props.sidebarLogo} alt="Logo" />
+                    </div>
+                </Link>
                 <nav className="sidebar__navbar">
                     <ul className="menu">
-                        <li className="menu__link"><a href="#"><Icon icon={FolderTwoToneIcon} iconSize={24} /></a></li>
-                        <li className="menu__link active"><a href="#"><Icon icon={DashboardTwoToneIcon} iconSize={24} /></a></li>
-                        <li className="menu__link"><a href="#"><Icon icon={EmailTwoToneIcon} iconSize={24} /></a></li>
-                        <li className="menu__link"><a href="#"><Icon icon={InsertDriveFileTwoToneIcon} iconSize={24} /></a></li>
+                        <li className="menu__link active"><Link to="../../home" ><Icon icon={HomeTwoToneIcon} iconSize={24} /></Link></li>
+                        <li className="menu__link active"><Link to="../../dashboard"><Icon icon={DashboardTwoToneIcon} iconSize={24} /></Link></li>
+                        <li className="menu__link active"><Link to="../../chat" ><Icon icon={EmailTwoToneIcon} iconSize={24} /></Link></li>
+                        <li className="menu__link active"><a href="#"><Icon icon={InsertDriveFileTwoToneIcon} iconSize={24} /></a></li>
                     </ul>
                 </nav>
             </div>

@@ -1,0 +1,25 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
+.card{
+  max-width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: $mainShadow;
+  text-align: center;
+  .card__icon{
+    text-align: center;
+    color: $mainColor;
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+  .card__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .card__text{
+    margin-bottom: 32px;
+  }
+}

@@ -75,4 +75,23 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.50s linear!important;
   }
+  .card{
+    background: ${({ theme }) => theme.header};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.50s linear!important;
+    box-shadow: ${({ theme }) => theme.shadow};
+  }
+  .users-container{
+    background: ${({ theme }) => theme.header};
+    border-radius: 10px;
+    transition: all 0.50s linear!important;
+  }
+  .user{
+    border-bottom: ${({ theme }) => theme.hrBorderColor};
+    transition: all 0.50s linear!important;
+  }
+  .user::after{
+    display: none;
+    transition: all 0.50s linear!important;
+  }
   `

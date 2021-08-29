@@ -1,13 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import './Styles/style.scss'
 
-import Logo from './Img/logo.svg'
 // Components
-import Sidebar from "./Components/Sidebar/Sidebar"
-import Main from "./Components/Main/Main"
+import Home from './Home'
+import Dashboard from './Dashboard'
+import Chat from "./Chat";
 import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
-
+import Logo from "./Img/logo.svg";
+import Sidebar from "./Components/Sidebar/Sidebar";
 function storeLanguageInLocalStorage(language) {
     localStorage.setItem("language", language)
 }
@@ -24,30 +26,45 @@ function App() {
         if(filter == false){
 
 
-        setFilter(true)
+            setFilter(true)
         }
         console.log(filter)
     }
-  return (
-    <div className={`App${filter ? " active" : ""}`} >
-        <Sidebar sidebarLogo={Logo}
-                 language={language}
-                 handleSetLanguage={language => {
-                     setLanguage(language);
-                     storeLanguageInLocalStorage(language);
-                 }}
-                 filterHandler={filterHandler}
-        />
-        <div className="app__content">
-            <Header language={language} />
-            <Main language={language} />
+    return(
+        <BrowserRouter>
+            <div className={`App${filter ? " active" : ""}`}>
+                <Sidebar sidebarLogo={Logo}
+                         language={language}
+                         handleSetLanguage={language => {
+                             setLanguage(language);
+                             storeLanguageInLocalStorage(language);
+                         }}
+                         filterHandler={filterHandler}
+                />
+                <div className="app__content">
+                    <Header />
 
-            <Footer language={language} />
-        </div>
+                    <Switch>
+                        <Route exact path="/" component={() => <Home language={language} />}  />
+                        <Route path="/home" component={() => <Home language={language} />} />
+                        <Route path="/dashboard" component={() => <Dashboard language={language} />} />
+                        <Route path="/chat" component={Chat} />
+                    </Switch>
+                    <Footer />
+                </div>
+                {/*<Home />*/}
+                {/*<Dashboard />*/}
+                {/*<Footer />*/}
+            </div>
+        </BrowserRouter>
 
-    </div>
-  );
+    )
 }
 
+const HomeMain = () => {
+    return(
+        <Home />
+    )
+}
 
 export default App;

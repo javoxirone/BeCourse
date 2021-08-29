@@ -1,3 +1,6 @@
+@import '../../Styles/mixins.scss';
+@import '../../Styles/variables.scss';
+
 footer.footer{
   padding: 20px 0;
   .container{
@@ -9,6 +12,18 @@ footer.footer{
       font-size: 14px;
       color: #C7CBD7;
       text-align: right;
+    }
+    .social{
+      display: flex;
+      column-gap: 10px;
+      margin-left: 10px;
+      &__icon{
+        font-size: 18px;
+        color: #C7CBD7;
+        &:hover{
+          color: $mainColor;
+        }
+      }
     }
   }
 }
