@@ -59,7 +59,7 @@ export default function Sidebar(props) {
                 </Link>
                 <nav className="sidebar__navbar">
                     <ul className="menu">
-                        <li className="menu__link active"><Link to="../../home" ><Icon icon={HomeTwoToneIcon} iconSize={24} /></Link></li>
+                        <li className="menu__link active"><Link to="../../BeCourse" ><Icon icon={HomeTwoToneIcon} iconSize={24} /></Link></li>
                         <li className="menu__link active"><Link to="../../dashboard"><Icon icon={DashboardTwoToneIcon} iconSize={24} /></Link></li>
                         <li className="menu__link active"><Link to="../../chat" ><Icon icon={EmailTwoToneIcon} iconSize={24} /></Link></li>
                         <li className="menu__link active"><a href="#"><Icon icon={InsertDriveFileTwoToneIcon} iconSize={24} /></a></li>
