@@ -45,7 +45,7 @@ function App() {
                     <Header />
 
                     <Switch>
-                        <Route exact path="/" component={() => <Home language={language} />}  />
+                        <Route exact path="/BeCourse" component={() => <Home language={language} />}  />
                         <Route path="/BeCourse" component={() => <Home language={language} />} />
                         <Route path="/dashboard" component={() => <Dashboard language={language} />} />
                         <Route path="/chat" component={Chat} />
