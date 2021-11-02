@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/BeCourse/static/css/main.54e9ee35.chunk.css",
+    "main.js": "/BeCourse/static/js/main.419e9ecf.chunk.js",
+    "main.js.map": "/BeCourse/static/js/main.419e9ecf.chunk.js.map",
+    "runtime-main.js": "/BeCourse/static/js/runtime-main.6612e877.js",
+    "runtime-main.js.map": "/BeCourse/static/js/runtime-main.6612e877.js.map",
+    "static/js/2.999ee75b.chunk.js": "/BeCourse/static/js/2.999ee75b.chunk.js",
+    "static/js/2.999ee75b.chunk.js.map": "/BeCourse/static/js/2.999ee75b.chunk.js.map",
+    "static/js/3.21e8f6d4.chunk.js": "/BeCourse/static/js/3.21e8f6d4.chunk.js",
+    "static/js/3.21e8f6d4.chunk.js.map": "/BeCourse/static/js/3.21e8f6d4.chunk.js.map",
+    "index.html": "/BeCourse/index.html",
+    "static/css/main.54e9ee35.chunk.css.map": "/BeCourse/static/css/main.54e9ee35.chunk.css.map",
+    "static/js/2.999ee75b.chunk.js.LICENSE.txt": "/BeCourse/static/js/2.999ee75b.chunk.js.LICENSE.txt",
+    "static/media/Avatar-1.a0a6c158.svg": "/BeCourse/static/media/Avatar-1.a0a6c158.svg",
+    "static/media/Avatar-2.b61a5cb0.svg": "/BeCourse/static/media/Avatar-2.b61a5cb0.svg",
+    "static/media/Avatar-3.fd7b825f.svg": "/BeCourse/static/media/Avatar-3.fd7b825f.svg",
+    "static/media/Avatar-4.121b8c8b.svg": "/BeCourse/static/media/Avatar-4.121b8c8b.svg",
+    "static/media/Avatar-5.fdfbbf8d.svg": "/BeCourse/static/media/Avatar-5.fdfbbf8d.svg",
+    "static/media/Avatar-6.cd7ca0cb.svg": "/BeCourse/static/media/Avatar-6.cd7ca0cb.svg",
+    "static/media/Avatar.bf4c8c1a.svg": "/BeCourse/static/media/Avatar.bf4c8c1a.svg",
+    "static/media/chart.scss": "/BeCourse/static/media/Gilroylight.5eb9550b.woff",
+    "static/media/Group 1.8b08391c.svg": "/BeCourse/static/media/Group 1.8b08391c.svg",
+    "static/media/Group 2.fbc69b33.svg": "/BeCourse/static/media/Group 2.fbc69b33.svg",
+    "static/media/Group 3.1f15b9bd.svg": "/BeCourse/static/media/Group 3.1f15b9bd.svg",
+    "static/media/Group 4.2392d790.svg": "/BeCourse/static/media/Group 4.2392d790.svg",
+    "static/media/Group 5.5ca906d6.svg": "/BeCourse/static/media/Group 5.5ca906d6.svg",
+    "static/media/Group 6.c9943477.svg": "/BeCourse/static/media/Group 6.c9943477.svg",
+    "static/media/home.c8035235.png": "/BeCourse/static/media/home.c8035235.png",
+    "static/media/image 17.b7001315.png": "/BeCourse/static/media/image 17.b7001315.png",
+    "static/media/image 18.98d46b2a.png": "/BeCourse/static/media/image 18.98d46b2a.png",
+    "static/media/image 19.a710b459.png": "/BeCourse/static/media/image 19.a710b459.png",
+    "static/media/image 21.8063fced.png": "/BeCourse/static/media/image 21.8063fced.png",
+    "static/media/logo.f6d90e3e.svg": "/BeCourse/static/media/logo.f6d90e3e.svg",
+    "static/media/mentor.ad04e48e.svg": "/BeCourse/static/media/mentor.ad04e48e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6612e877.js",
+    "static/js/2.999ee75b.chunk.js",
+    "static/css/main.54e9ee35.chunk.css",
+    "static/js/main.419e9ecf.chunk.js"
+  ]
+}
